@@ -2,7 +2,6 @@
 
 void conv_forward(conv *op)
 {
-    int half_kernel=op->kernel_size/2;
     for(int out_c=0;  out_c < op->out_channels;out_c++)
     {
         for(int out_y=0;  out_y < op->out_h;out_y++)

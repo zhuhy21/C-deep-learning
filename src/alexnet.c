@@ -331,6 +331,10 @@ int main(int argc, char* argv[])
     int precision=0;
     for(int index=0;index<1000;index++)
     {
+        if(index%100==0)
+        {
+            printf("index:%d\n",index);
+        }
         DE_GrayImage* image = &dataset.images[index];
         float* image_input = malloc(28*28*sizeof(float));
         for(int i=0;i<28;i++)
